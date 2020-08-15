@@ -1,0 +1,282 @@
+﻿
+<!DOCTYPE html>
+<html>
+    <!-- Created by Andre Brandao Teodoro #300944427 on May 14th 2019-->
+    <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script src="js/assignment1.js"></script>
+    <link href="css/assignment1Styles.css" rel="stylesheet">
+    <link href="file:///C:/Users/renan/Documents/COMP125/COMP125ClientSideDevelopment003/Assignment1/Assign1.css" rel="stylesheet" type="text/css">
+    <title>Basal Methabolic Rate (BMR) Calculator</title>
+</head>
+<body class="allPage">
+    <div id="content">
+    <header>
+	<h1>
+	<a href="https://www.centennialcollege.ca/">
+	<img alt="centennial college logo" height="125" src="images/logo.png" width="400"></a></h1>
+	<h1>Continuing&nbsp;Education Course/Instructor Evaluation</h1>
+	<p>Please read each statement carefully and consider each one individually.</p>
+</header>
+<form action="mailto:kmatienz@my.centennialcollege.ca" method="post">
+	
+	
+	
+	<table style="width: 100%">
+		<tr>
+			<td style="width: 294px; height: 26px;">Course Name/Code:</td>
+			<td style="height: 26px"> 
+		<select name="lstCourses" size="1" tabindex="1" style="height: 25px; width: 600px">
+		<option>Select course</option>
+		<option value="COMM 170/COMM171">COMM170/COMM171 - College Communications 2</option>
+		<option value="COMP 100">COMP 100 - Programming 1</option>
+		<option value="COMP 120">COMP 120 - Software Engineering Fundamentals</option>
+		<option value="GNED 219">GNED 219 - General Education Elective</option>
+		<option value="MATH 175">MATH 175 - Functions and Number Systems</option>
+		<option value="COMP 213">COMP 213 - Web Interface Design</option>
+		</select></td>
+		</tr>
+		<tr>
+			<td style="width: 294px">Semester:</td>
+			<td>&nbsp;<input name="optSemester" type="radio" tabindex="5" value="Fall" />Fall
+			<input name="optSemester" type="radio" tabindex="7" value="Winter" />Winter 
+			<input name="optSemester" type="radio" tabindex="9" value="Summer" />Summer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Year: 
+			<select name="lstSemester" size="1" tabindex="11">
+					<option>Select year</option>
+					<option value="2018 Summer">2018 Summer</option>
+					<option value="2018 Fall">2018 Fall</option>
+					<option value="2019 Winter">2019 Winter</option>
+					<option value="2019 Summer">2019 Summer</option>
+	
+				</select></td>
+		</tr>
+		<tr>
+			<td style="width: 294px; height: 26px;">Instructor:</td>
+			<td style="height: 27px"> <select name="lstProf" size="1" tabindex="13" style="width: 205px">
+			<option>Select instructor</option>
+		<option value="Narendra Pershad">Narendra Pershad</option>
+		<option value="Vijayalakshmi Angamuthu">Vijayalakshmi Angamuthu</option>
+		<option value="Gary Lipschutz">Gary Lipschutz</option>
+		<option value="Tommy Bianchi">Tommaso Bianchi</option>
+		<option value="Kadeem Best">Kadeem Best</option>
+		<option value="Joanne Filotti">Joanne Filotti</option>
+		<option value="Darshana Patel">Darshana Patel</option>
+		</select></td>
+		</tr>
+		</table>
+		<h4>INSTRUCTOR </h4>
+		<table style="width: 100%">
+		<tr>
+			<td style="width: 902px; height: 27px;">&nbsp;</td>
+			<td style="height: 27px; width: 204px;" class="rating">Excellent</td>
+			<td style="height: 27px; width: 204px;" class="rating">Good</td>
+			<td style="height: 27px; width: 204px;" class="rating">Fair</td>
+			<td style="height: 27px; width: 204px;" class="rating">Not Satisfactory</td>
+		</tr>
+		<tr>
+			<td style="width: 902px; height: 27px;">How would you rate the 
+			instructor's:</td>
+			<td style="height: 27px; width: 214px;" class="Options">&nbsp;</td>
+			<td style="height: 27px; width: 214px;" class="Options">&nbsp;</td>
+			<td style="height: 27px; width: 214px;" class="Options">&nbsp;</td>
+			<td style="height: 27px; width: 214px;" class="Options">&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width: 902px; height: 27px;">1. 
+		knowledge of subject?</td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+			<input name="optRatingKnowledge" type="radio" value="Excellent" tabindex="15" style="height: 20px"></td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingKnowledge" type="radio" value="Good" style="height: 20px" tabindex="17"></td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+			<input name="optRatingKnowledge" type="radio" value="Fair" style="height: 20px;" tabindex="19"></td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingKnowledge" type="radio" value="Not Satisfactory" style="height: 20px" tabindex="21"></td>
+		</tr>
+		<tr>
+			<td style="width: 902px; height: 27px;">2. helpfulness? </td>
+			<td class="Options" style="width: 204px; height: 27px;">
+		<input name="optRatingHelpfulness" type="radio" value="Excellent" style="width: 20px" tabindex="23"></td>
+			<td class="Options" style="width: 204px; height: 27px;">
+		<input name="optRatingHelpfulness" type="radio" value="Good" style="width: 20px" tabindex="25"></td>
+			<td class="Options" style="width: 204px; height: 27px;">
+		<input name="optRatingHelpfulness" type="radio" value="Fair" style="width: 20px" tabindex="27"></td>
+			<td class="Options" style="width: 204px; height: 27px;">
+		<input name="optRatingHelpfulness" type="radio" value="Not Satisfactory" style="width: 20px" tabindex="29"></td>
+		</tr>
+		<tr>
+			<td style="width: 902px; height: 27px;">3. courtesy 
+		and respect for all student?</td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingRespect" type="radio" value="Excellent" tabindex="31"></td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingRespect" type="radio" value="Good" tabindex="33"></td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingRespect" type="radio" value="Fair" tabindex="35"></td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingRespect" type="radio" value="Not Satisfactory" tabindex="37"></td>
+		</tr>
+		<tr>
+			<td style="width: 902px; height: 27px;">4. 
+		communication skills?</td>
+			<td class="Options" style="width: 204px; height: 27px;">
+			<input name="optRatingCommSkills" type="radio" value="Excellent" tabindex="39"></td>
+			<td class="Options" style="width: 204px; height: 27px;">
+		<input name="optRatingCommSkills" type="radio" value="Good" tabindex="41"></td>
+			<td class="Options" style="width: 204px; height: 27px;">
+		<input name="optRatingCommSkills" type="radio" value="Fair" tabindex="43"></td>
+			<td class="Options" style="width: 204px; height: 27px;">
+		<input name="optRatingCommSkills" type="radio" value="Not Satisfactory" tabindex="45"></td>
+		</tr>
+		<tr>
+			<td style="width: 902px; height: 27px;">5. overall 
+		performance?</td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+			<input name="optRatingPerformance" type="radio" value="Excellent" tabindex="47"></td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingPerformance" type="radio" value="Good" tabindex="49"></td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingPerformance" type="radio" value="Fair" tabindex="51"></td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingPerformance" type="radio" value="Not Satisfactory" tabindex="53"></td>
+		</tr>
+		</table>
+		<h4>COURSE</h4>
+		<table style="width: 100%">
+		<tr>
+			<td style="height: 27px; width: 902px;">
+			</td>
+			<td style="height: 27px; width: 204px;" class="rating">
+			Excellent</td>
+			<td style="height: 27px; width: 204px;" class="rating">
+			Good</td>
+			<td style="height: 27px; width: 204px;" class="rating">
+			Fair</td>
+			<td style="height: 27px; width: 204px;" class="rating">
+			Not Satisfactory</td>
+		</tr>
+		<tr>
+			<td style="width: 902px; height: 27px;">6. How would you rate the course material?</td>
+			<td class="alternateChoices" style="width: 212px; height: 27px;">
+		<input name="optRatingCourseMaterial" type="radio" value="Excellent" tabindex="61"></td>
+			<td class="alternateChoices" style="width: 212px; height: 27px;">
+		<input name="optRatingCourseMaterial" type="radio" value="Good" tabindex="63"></td>
+			<td class="alternateChoices" style="width: 212px; height: 27px;">
+		<input name="optRatingCourseMaterial" type="radio" value="Fair" tabindex="65"></td>
+			<td class="alternateChoices" style="width: 212px; height: 27px;">
+		<input name="optRatingCourseMaterial" type="radio" value="Not Satisfactory" tabindex="67"></td>
+		</tr>
+		<tr>
+			<td style="width: 902px; height: 27px;">7. How much 
+		did this course meet your expectations?</td>
+			<td style="height: 27px; width: 204px;" class="Options">
+		<input name="optRatingCourseExpectations" type="radio" value="Excellent" tabindex="71"></td>
+			<td style="height: 27px; width: 204px;" class="Options">
+		<input name="optRatingCourseExpectations" type="radio" value="Good" tabindex="73"></td>
+			<td style="height: 27px; width: 204px;" class="Options">
+		<input name="optRatingCourseExpectations" type="radio" value="Fair" tabindex="75"></td>
+			<td style="height: 27px; width: 204px;" class="Options">
+		<input name="optRatingCourseExpectations" type="radio" value="Not Satisfactory" tabindex="77"></td>
+		</tr>
+		<tr>
+			<td style="width: 902px; height: 27px;">8. How 
+		would you rate this course overall?</td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingCourseOverall" type="radio" value="Excellent" tabindex="81"></td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingCourseOverall" type="radio" value="Good" tabindex="83"></td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingCourseOverall" type="radio" value="Fair" tabindex="85"></td>
+			<td class="alternateChoices" style="width: 204px; height: 27px;">
+		<input name="optRatingCourseOverall" type="radio" value="Not Satisfactory" tabindex="87"></td>
+		</tr>
+		</table>
+		<h4>GENERAL 
+		INFORMATION</h4>
+		<table style="width: 100%">
+		<tr>
+			<td style="width: 458px">&nbsp;</td>
+			<td class="rating" style="width: 150px">Yes</td>
+			<td class="rating" style="width: 150px">No</td>
+			<td class="rating" style="width: 150px">Not Sure</td>
+		</tr>
+		<tr>
+			<td style="width: 458px">9. Was the course outline reviewed/explained at the beginning 
+		of your course?</td>
+			<td class="alternateChoices" style="width: 150px">
+			<input name="optGenInfoReview" type="radio" value="Yes" tabindex="91"></td>
+			<td class="alternateChoices" style="width: 150px">
+		<input name="optGenInfoReview" type="radio" value="No" tabindex="93"></td>
+			<td class="alternateChoices" style="width: 150px"> 
+			<input name="optGenInfoReview" type="radio" value="Not Sure" tabindex="95"></td>
+		</tr>
+		<tr>
+			<td style="width: 458px">10. Would you recommend this course to a friend with the same 
+		interest?</td>
+			<td class="Options" style="width: 150px">
+			<input name="optGenInfoRecommend" type="radio" value="Yes" tabindex="101"></td>
+			<td class="Options" style="width: 150px">
+		<input name="optGenInfoRecommend" type="radio" value="No" tabindex="103"></td>
+			<td class="Options" style="width: 150px">
+			<input name="optGenInfoRecommend" type="radio" value="Not Sure" tabindex="105"></td>
+		</tr>
+		<tr>
+			<td colspan="4" style="height: 27px">
+			<h4>ANY OTHER COMMENTS</h4>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 458px; height: 103px;">11. What is the best thing about this course?
+			</td>
+			<td style="height: 103px" colspan="3">
+				<br>
+				<textarea name="txtBestThing" style="width: 507px; height: 60px;" tabindex="111" placeholder="---Please click here to type---"></textarea>
+			</td>
+		</tr>
+		<tr>
+			<td style="width: 458px">12. How could we improve about this course?</td>
+			<td style="height: 103px" colspan="3">
+				<br>
+				<textarea name="txtImprovement" style="width: 507px; height: 60px;" tabindex="113" placeholder="---Please click here to type---"></textarea>
+			</td>
+		</tr>
+			<tr>
+			<td style="width: 458px">13. Other comments/suggestion:</td>
+			<td colspan="3">
+				<br>
+				<textarea name="txtSuggestions" style="width: 507px; height: 60px;" tabindex="115" placeholder="---Please click here to type your comments or suggestions---"></textarea>
+			</td>
+			</tr>
+			<tr>
+				<td class ="submit" style="width: 458px; height: 30px;">
+			<input name="btnSubmit" type="submit" value="Complete Evaluation" tabindex="117"></td>
+				<td class ="reset" style="height: 30px" colspan="3">
+			<input name="btnReset" type="reset" value="Clear Form" tabindex="119"></td>
+		</tr>
+		</table>
+		<h3>Thank you! We pay attention to your feedback!</h3>
+</form>
+
+
+	<table style="width: 100%">
+		<tr>
+			<td style="height: 27px">
+		<p id ="buttomLinks"><a href="https://www.centennialcollege.ca/programs-and-courses/">
+		www.centennialcollege.ca/programs-and-courses/</a></p></td>
+			<td style="height: 27px"> 
+		<p id ="buttomLinks"><a href="mailto:kmatienz@my.centennialcollege.ca">continuingeducation@centennialcollege.ca</a></p>
+		
+		</td>
+		
+		</tr>
+	</table>
+
+
+<footer>
+	<p><a href="../index.html">Back to Index</a></p>
+	<p id="copyright">&copy;&nbsp;Copyright Kryselle Celine Matienzo - COMP213 - 
+	Assignment 4 - Winter 2019</p>
+</footer>
+</div>
+</body>
+
+</html>

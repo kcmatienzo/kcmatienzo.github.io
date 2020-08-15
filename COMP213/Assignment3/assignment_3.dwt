@@ -1,0 +1,313 @@
+﻿<!DOCTYPE html>
+<!-- Created by: Kryselle Celine Matienzo - Student Number: 301053087 - Winter Semester 2019 -->
+<html lang="en">
+
+<head>
+<meta content="en-us" http-equiv="Content-Language">
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<!-- #BeginEditable "doctitle" -->
+<title>Assignment 3</title>
+<!-- #EndEditable -->
+<meta content="COMP 213, html, css" name="keywords">
+<meta content="Product Online Page - COMP 213" name="description">
+<style type="text/css">
+.p1-title {
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	line-height: normal;
+	color: #333333;
+}
+h3 {
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-size: x-large;
+	background-image: url('images/BACKGROUND.png');
+}
+.auto-style3 {
+	border-radius: 1px;
+	border-style: solid;
+	border-width: 1px;
+	color: #333333;
+}
+h1 {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	color: #FFFFFF;
+	background-image: url('images/banner2.jpg');
+	font-size: xx-large;
+	text-transform: uppercase;
+	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	font-style: normal;
+}
+h4 {
+	background-position: bottom;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	text-align: center;
+	background-color: #FFFFFF;
+	color: #333333;
+	text-decoration: none;
+	background-image: url('images/BACKGROUND.png');
+}
+.auto-style4 {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	text-align: center;
+	color: #333333;
+}
+h5 {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-size: small;
+	text-align: center;
+}
+a:hover {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FF99CC;
+	text-decoration: none;
+}
+a:active {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	color: #666666;
+	text-decoration: none;
+	text-align: center;
+	word-spacing: 1px;
+}
+a {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	color: #666666;
+	word-spacing: 1px;
+	text-align: center;
+	text-decoration: none;
+}
+.center {
+	text-align: center;
+}
+#allPage {
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	background-color: #FFFFFF;
+	color: #333333;
+}
+ul {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	text-decoration: none;
+	color: #333333;
+	list-style-image: url('../Assignment2/images/bullet_green_alt.png');
+	text-align: left;
+}
+body {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	background-image: url('images/BACKGROUND.png');
+	color: #333333;
+}
+.icons {
+	text-align: right;
+}
+.auto-style6 {
+	border-width: 0px;
+}
+</style>
+<link href="file:///C:/Users/renan/Documents/COMP125/COMP125ClientSideDevelopment003/Assignment1/Assign1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="color: #333333" id="allPage">
+<div id="allPage">
+	<p class="center">
+	<a href="https://www.ikea.com/">
+	<img alt="ikea logo" class="auto-style6" height="101" src="images/logo.png" width="250"></a></p>
+	<hr style="height: 0">
+	<table style="width: 100%">
+		<tr>
+			<td style="width: 483px"><a href="assignment3.dwt">HOME</a>&nbsp;
+<a href="mailto:kmatienz@my.centennialcollege.ca">CONTACT</a>&nbsp;
+<a href="https://www.ikea.com/ca/en/locator/ikny_splash_index.html">LOCATIONS</a></td>
+			<td class="icons">
+			<a href="https://www.facebook.com/IKEACanada/">
+			<img alt="ikea facebook" height="30" src="images/Free%20Social%20Media%20Facebook%20%20Icon%20Black%20circle%20ring.png" width="30" class="auto-style6"></a>
+			<a href="https://www.instagram.com/ikeacanada/?hl=en">
+			<img alt="ikea instagram" height="30" src="images/Free%20Social%20Media%20Icon%20%20Instagram%20Black%20circle%20ring.png" width="30" class="auto-style6"></a>
+			<a href="https://twitter.com/ikeacanada?lang=en">
+			<img alt="ikea twitter" height="30" src="images/Free%20Social%20Media%20Icon%20Twitter%20Black%20circle%20ring.png" width="30" class="auto-style6"></a></td>
+		</tr>
+	</table>
+	<hr class="auto-style8" style="height: 0px">
+	<h4 style="width: 980px; height: 21px">Find a sofa that's just right</h4>
+<h1 style="height: 247px" class="auto-style6">
+	</h1>
+<p style="height: 58px; width: 980px;" class="auto-style4">
+Take the time to just sit back and relax – it’s one of life’s simple pleasures. 
+We make soft, cozy sofas and armchairs you can sink right into. Because when you 
+have the chance to plop down into a couch and settle in, the only thing you 
+should have to worry about is who’s going to refill the snack bowl.</p>
+<table style="width: 100%">
+	<tr>
+		<td style="width: 868px">
+		<h3 class="auto-style2"><a href="http://home.">Your lazy days will thank you</a></h3>
+		<p style="animation:" class="p1-title">
+		<a class="p1-title" href="http://home.">The sofa is one of the most important pieces of furniture in your 
+		home. Choosing the right one can be tough, so we’ve broken it down by 
+		material, shape, size, colour, and price so you can find exactly what 
+		you’re looking for. Whether you want a sectional, a modular sofa, or a 
+		built-in sofa bed, there’s many styles to choose from. Mix it up with 
+		our filters and find that perfect sofa for your home.</a></p>
+		</td>
+		
+		<td class="auto-style4">
+		<img alt="pink sofa" height="281" src="images/maxresdefault.jpg" width="500"><br>
+		<a href="Details.html">View Larger Photo</a></td>
+	</tr>
+	</table>
+
+	<table id="itemsTable" align="left" class="auto-style7" style="width: 100%">
+	<tr>
+		<td style="height: 63px; width: 292px;">
+		<h4 style="width: 321px">ITEM</h4>
+		</td>
+		<td style="height: 63px; width: 370px;">
+		<h4>DESCRIPTION</h4>
+		</td>
+		<td style="height: 63px">
+		<h4>FEATURES</h4>
+		</td>
+	</tr>
+	<tr class="auto-style3">
+		<td style="height: 63px; width: 292px;" class="center">
+		<img alt="yellow sofa" height="134" src="images/yellowSofa.jpg" width="320"><br>
+		</td>
+		<td style="height: 63px; width: 370px;">
+		<h5>VIMLE<br>Loveseat, Orsta golden yellow<br>$399.99</h5>
+		<p class="auto-style4">Bring the simple elements of modern design into 
+		your living room or bedroom with the Vimle loveseat. Its retro shape 
+		features a sloped seatback, curved arms and chic wooden legs that make a 
+		style statement in any space.</p>
+		</td>
+		<td style="height: 63px">
+		<ul>
+			<li>Cover material: 100% polyester</li>
+			<li>Cushion filling material: polyurethane foam</li>
+			<li>Cushion padding density: 30kg/m3</li>
+			<li>Frame: ash wood, MDF and plywood</li>
+			<li>Legs: rubberwood with varnish</li>
+			<li>Dust with a clean, damp, lint-free cloth</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 63px; width: 292px;" class="center">
+		<img alt="red sofa" height="247" src="images/redSofa.jpg" width="320"><br>
+		</td>
+		<td style="height: 63px; width: 370px;" class="auto-style4">
+		<h5>GREG<br>Sectional 3-seat corner, Vissle red/orange<br>$545.99</h5>
+		<p class="auto-style4">Clean, contemporary lines and a roomy feel make this 
+		two-seater sofa and chaise longue combo a must-have in any living room. 
+		Comfy cozy never 
+		looked this good.</p>
+		</td>
+		<td style="height: 63px">
+		<ul>
+			<li>Cover material: 100% polyester</li>
+			<li>Back cushion filling material: fibrefill</li>
+			<li>Back cushion padding density: 2300g/pc</li>
+			<li>Seat cushion filling material: recycled foam, polyurethane foam, 
+			spray foam</li>
+			<li>Seat cushion padding density: 40kg/m<sup>3</sup>, 27kg/m<sup>3</sup>, 120g/m<sup>2</sup></li>
+			<li>Frame: solid wood, particle board, plywood</li>
+			<li>Legs: solid rubberwood</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 63px; width: 292px;" class="center">
+		<img alt="brown leather sofa" height="177" src="images/fabulous-ikea-leather-sofa-with-3-seater-leather-sofa-ikea.jpg" width="320"><br>
+		</td>
+		<td style="height: 63px; width: 370px;" class="auto-style4">
+		<h5>ROWAN<br>100% leather 3-seater<br>$899.99</h5>
+		<p class="auto-style4">&nbsp;Rowan is a striking sofa 
+		reminiscent of mid-century modern design. Its durable frame, slender 
+		track arms, splayed, tapered legs and ample padded seating with 
+		loose-back and side cushions are a welcome addition that provide 
+		everyday comfort and support.</p>
+		</td>
+		<td style="height: 63px">
+		<ul>
+			<li>Cover material: full-grain leather</li>
+			<li>Frame: solid pine wood and plywood</li>
+			<li>Legs: rubberwood</li>
+			<li>Back cushions: webbing, foam, fibre and feather</li>
+			<li>Seat cushions: spring, webbing, foam, fibre and feathers</li>
+			<li>Armrests: foam and dacron</li>
+			<li>Cushion padding density: 32kg/m<sup>3</sup></li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 63px; width: 292px;" class="center">
+		<img alt="futon sofa bed" height="199" src="images/futon.jpg" width="320"></td>
+		<td style="height: 63px; width: 370px;" class="auto-style4">
+		<h5>BETTY<br>Futon Sofa Bed<br>$765.99</h5>
+		<p class="auto-style4">With its track arm design, tufted back and seat 
+		and rubber wood legs, the Betty is tailored, tasteful and timeless. If 
+		you’re looking for a couch that’s bound to become a classic, the Betty 
+		is your best bet.</p>
+		</td>
+		<td style="height: 63px">
+		<ul>
+			<li>Cover material: 100% polyester</li>
+			<li>Cushion filling material: 60% recycled foam, 40%foam</li>
+			<li>Cushion padding density: recycled foam 35-45kg/m<sup>3</sup>, foam 18kg/m<sup>3</sup></li>
+			<li>Frame: 90% plywood, 10% eucalyptus wood</li>
+			<li>Legs: rubberwood</li>
+			<li>Width of seat: 191cm (75")</li>
+		</ul>
+		</td>
+	</tr>
+	<tr>
+		<td style="height: 63px; width: 292px;" class="center">
+		<img alt="gray love seat" height="165" src="images/loveseat.jpg" width="320"><br>
+		</td>
+		<td style="height: 63px; width: 370px;" class="auto-style4">
+		<h5>ROY<br>Velvet Loveseat<br>$575.99</h5>
+		<p class="auto-style4">Sit back and relax in grand fashion on the Roy 
+		velvet loveseat. This vintage-inspired design features curved arms, 
+		elegant button tufting and metal studs on the arms to deliver a cool 
+		modern finish. Its luxe upholstery fabric makes for supremely inviting 
+		seating in any living room décor.</p>
+		</td>
+		<td style="height: 63px">
+		<ul>
+			<li>Cover material: 100% polyester</li>
+			<li>Cushion filling material: 100 polyurethane foam</li>
+			<li>Back cushion padding density: 30kg/m<sup>3</sup></li>
+			<li>Seat cushion padding density: 25kg/m<sup>3</sup></li>
+			<li>Frame: ash wood, MDF and plywood</li>
+			<li>Legs: rubberwood with varnish</li>
+		</ul>
+		</td>
+	</tr>
+</table>
+
+	<br><br>
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</div>
+
+<p class="center">
+<map id="ImgMap0" name="ImgMap0">
+	<area alt="" coords="31, 155, 4, 83, 4, 3, 116, 3, 128, 124" href="https://www.ikea.com/ms/en_CA/locator/vaughan.html" shape="poly">
+	<area alt="" coords="35, 163, 80, 265, 57, 289, 79, 291, 79, 317, 98, 312, 97, 333, 120, 368, 171, 343, 183, 298, 163, 264, 186, 249, 148, 216, 129, 212, 116, 201, 124, 183, 114, 178, 120, 163, 101, 174, 80, 143" href="https://www.ikea.com/ms/en_CA/locator/etobicoke.html" shape="poly">
+	<area alt="" coords="97, 142, 110, 155, 132, 157, 139, 196, 133, 197, 171, 223, 235, 202, 240, 167, 259, 172, 268, 204, 298, 192, 315, 206, 341, 198, 305, 75" href="https://www.ikea.com/ms/en_CA/locator/north_york.html" shape="poly">
+</map>
+<img alt="ikea locations" height="390" polygon=" (35,163) (80,265) (57,289) (79,291) (79,317) (98,312) (97,333) (120,368) (171,343) (183,298) (163,264) (186,249) (148,216) (129,212) (116,201) (124,183) (114,178) (120,163) (101,174) (80,143) https://www.ikea.com/ms/en_CA/locator/etobicoke.html" src="images/Cityoftorontosmall.png" usemap="#ImgMap0" width="525">
+&nbsp;</p>
+<p><a href="../index.html">Back to Index</a></p>
+<hr style="height: 0">
+<h6>&copy;&nbsp;Copyright Kryselle Celine Matienzo - COMP213 - Assignment 3 - Winter Semester 2019</h6>
+
+<hr style="height: 0">
+
+</body>
+
+</html>
