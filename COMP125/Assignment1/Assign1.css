@@ -1,0 +1,89 @@
+﻿#header {
+	box-shadow: 1px 1px 1px #C0C0C0;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-size: small;
+	text-align: center;
+}
+#footer {
+	padding: 8px 10px 10px 10px;
+	color: white;
+	background-color: #906546;
+}
+#copyright {
+	font-size: x-small;
+}
+#footer a {
+	color: white;
+	text-decoration: none;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+#footer a:hover {
+	color: #333333;
+	background-color: #CBA374;
+}
+body {
+	padding: 5px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	color: #333333;
+	background-color: #F9F3EC;
+}
+.floatRight {
+	float: right;
+	margin-left: 6px;
+	padding-top: 10px;
+}
+#allPage {
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+a {
+	color: #333333;
+	text-decoration: none;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#content {
+	text-align: justify;
+}
+
+#gallery {
+	position: relative; }
+#gallery ul {
+	list-style-type: none;
+    width: 900px; }
+#gallery li {
+	display: inline; 
+    float: left;
+	padding: 10px; }
+	 
+#gallery img {
+	border-style: none; }
+#gallery a {
+ 	text-decoration: none;
+    font-style: italic;  
+    color: #333; }
+#gallery span {
+	display: none; }
+#gallery a:hover span {
+	display: block;     
+	position: absolute;
+	top: 100px;
+	left: 200px; 
+	text-align: center; } 
+
+h3 {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-size: x-large;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	color: #906546;
+}
+h1 {
+	color: #996633;
+	font-family: Tahoma;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	text-align: center;
+}

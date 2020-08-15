@@ -1,0 +1,63 @@
+﻿h1 {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	color: #90654B;
+}
+#copyright {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-size: x-small;
+	color: #FFFFFF;
+}
+#content {
+	font-family: Tahoma;
+	color: #936231;
+}
+
+#header {
+	box-shadow: 1px 1px 1px #C0C0C0;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-size: small;
+	text-align: center;
+}
+#footer {
+	padding: 8px 10px 10px 10px;
+	color: white;
+	background-color: #906546;
+}
+#footer a {
+	color: white;
+	text-decoration: none;
+	padding-right: 2px;
+	padding-left: 2px;
+}
+#footer a:hover {
+	color: #333333;
+	background-color: #CBA374;
+}
+body {
+	padding: 5px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	color: #333333;
+	background-color: #F9F3EC;
+}
+#allPage {
+	width: 980px;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+}
+a {
+	color: #333333;
+	text-decoration: none;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#createTable {
+	background: #e3d5ba;
+	font-size: 1.00em;
+	font-family: "Trebuchet MS";
+	color: #800000;
+}
+#JavaTableResults {
+	text-align: center;
+}

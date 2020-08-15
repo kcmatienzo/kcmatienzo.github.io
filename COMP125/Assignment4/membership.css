@@ -1,0 +1,81 @@
+﻿/*  JavaScript 6th Edition
+
+    Form Validation
+    Author:   Kryselle Celine Matienzo
+    Date:     July 01, 2019
+    
+    Filename: membership.css
+*/
+
+body {
+	font-family: "Trebuchet MS";
+	color: #333333;
+	margin-left: 50px;
+    margin-right: 50px;
+	background-color: #F9F3EC;
+}
+
+#footer {
+	padding: 8px 10px 10px 10px;
+	color: white;
+	background-color: #906546;
+}
+
+#copyright {
+	font-family: "Trebuchet MS";
+	font-size: small;
+}
+a {
+	font-size: large;
+	text-decoration: none;
+	font-family: "Trebuchet MS";
+	color: #FFFFFF;
+}
+a:hover {
+	font-family: "Trebuchet MS";
+	font-size: small;
+	color: #FFFFFF;
+	text-decoration: none;
+	background-color: #996633;
+}
+a:active {
+	font-family: "Trebuchet MS";
+	color: #F9F3EC;
+	text-decoration: none;
+}
+section {
+	font-family: "Trebuchet MS";
+	text-decoration: none;
+	color: #996633;
+}
+#button {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	font-size: 1.00em;
+	color: #800000;
+	background: #e3d5ba;
+	text-align: center;
+	border-radius: 3px;
+	padding: 1px;
+	margin: 1px;
+	border: thin dashed #D2A77B;
+}
+
+h1 {
+	font-variant: small-caps;
+	text-transform: capitalize;
+	color: #996633;
+}
+h2 {
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	color: #996633;
+	text-transform: capitalize;
+	font-variant: small-caps;
+}
+h4 {
+	color: #333333;
+}
+#profile {
+	color: #996633;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	background-color: #F9F3EC;
+}

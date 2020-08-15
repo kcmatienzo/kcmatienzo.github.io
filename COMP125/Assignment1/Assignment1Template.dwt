@@ -1,0 +1,165 @@
+﻿var gender = 0;
+var age = 0; 
+var weight = 0;
+var weightMetricInput = 0;
+var weightImperialInput= 0
+var height = 0;
+var heightImperialInput = 0;
+var heightMetricInput = 0
+var bmr = 0;
+var activityLevel = 0;
+var activityMultiplier = 1.53;
+var recommendedCalories = 0;
+var bmr = 0;
+
+function metricCalculation(){
+    validateForm();
+    bmr = 0;
+    recommendedCalories = 0;
+    height = heightImperialInput+ heightMetricInput;
+    weight = weightMetricInput + ( weightImperialInput /1000);
+    bmr = (66.5 + ( 13.75 * weight ) + ( 5.003 * height) - ( 6.755 * age ));
+    if(gender == 0){
+        bmr = 66.5 + ( 13.75 * weight ) + ( 5.003 * height) - ( 6.755 * age );
+        updateActivityMultiplier();
+    } else {
+        bmr = 655.1 + ( 9.563 * weight ) + ( 1.850 * height ) - ( 4.676 * age );
+        updateActivityMultiplier();
+    }
+    recommendedCalories = bmr * activityMultiplier;
+    document.getElementById("bmrValue").innerHTML = bmr.toFixed(0);
+    document.getElementById("recommendedCalories").innerHTML = recommendedCalories.toFixed(0);
+}
+
+function imperialCalculation(){
+    validateForm();
+    bmr = 0;
+    recommendedCalories = 0;
+    height = (heightImperialInput * 12) + heightMetricInput;
+    weight = (weightMetricInput*14) + weightImperialInput;
+    if(gender == 0){
+        bmr = 66 + ( 6.2 * weight ) + ( 12.7 * height ) - ( 6.76 * age );
+        updateActivityMultiplier();
+    } else {
+        bmr = 655.1 + ( 4.35 * weight ) + ( 4.7 * height ) - ( 4.7 * age );
+        updateActivityMultiplier();
+    }
+    recommendedCalories = bmr * activityMultiplier;
+    document.getElementById("bmrValue").innerHTML = bmr.toFixed(0);
+    document.getElementById("recommendedCalories").innerHTML = recommendedCalories.toFixed(0);
+}
+
+
+function resetForm() {
+    document.getElementById("gender").value = 0;
+    document.getElementById("age").value = 0;
+    document.getElementById("heightImperialInput").value = 0;
+    document.getElementById("heightMetricInput").value = 0;
+    document.getElementById("weightMetricInput").value = 0;
+    document.getElementById("weightImperialInput").value = 0;
+    document.getElementById("activityLevel").value = 0;
+    document.getElementById("bmrValue").value = 0;
+    document.getElementById("bmrValue").innerHTML = "";
+    document.getElementById("recommendedCalories").innerHTML = "";
+    createEventListeners();
+}
+
+window.addEventListener("load", resetForm, false);
+
+function createEventListeners() {
+    document.getElementById("measureSystem").addEventListener("change",changeMeasurementSystem, false);
+    document.getElementById("gender").addEventListener("change", function (){gender = parseFloat(document.getElementById("gender").value);}, false);
+    document.getElementById("age").addEventListener("change", function (){age = parseFloat(document.getElementById("age").value);}, false);
+    document.getElementById("heightImperialInput").addEventListener("change", function (){heightImperialInput = parseFloat(document.getElementById("heightImperialInput").value);}, false);
+    document.getElementById("heightMetricInput").addEventListener("change", function (){heightMetricInput = parseFloat(document.getElementById("heightMetricInput").value);}, false);
+    document.getElementById("weightMetricInput").addEventListener("change", function (){weightMetricInput = parseFloat(document.getElementById("weightMetricInput").value);}, false);
+    document.getElementById("weightImperialInput").addEventListener("change", function (){weightImperialInput = parseFloat(document.getElementById("weightImperialInput").value);}, false);
+    document.getElementById("activityLevel").addEventListener("change", updateActivityMultiplier, false);
+    document.getElementById("calculateBMR").addEventListener("onclick", metricCalculation, false);
+    document.getElementById("restart").addEventListener("onclick", resetForm, false);
+}
+
+
+function changeMeasurementSystem(){
+    if (measureSystem.value == 0){
+        document.getElementById("heightImperial").innerHTML = "Meters";
+        document.getElementById("heightImperialInput").value = 0;
+        document.getElementById("heightImperialInput").min = 1;
+        document.getElementById("heightImperialInput").max = 3;
+        document.getElementById("heightMetric").innerHTML = "Centimeters";
+        document.getElementById("heightMetricInput").value = 0;
+        document.getElementById("heightMetricInput").min = 0;
+        document.getElementById("HeightMetricInput").max = 99;
+        document.getElementById("labelWeight1").innerHTML = "Kilograms";
+        document.getElementById("weightMetricInput").value = 0;
+        document.getElementById("weightMetricInput").min = 30;
+        document.getElementById("weightMetricInput").max = 280;
+        document.getElementById("labelWeight2").innerHTML = "Grams";
+        document.getElementById("weightImperialInput").Value = 0;
+        document.getElementById("weightImperialInput").min = 0;
+        document.getElementById("weightImperialInput").max = 99;
+        document.getElementById("bmrValue").innerHTML = "";
+        document.getElementById("recommendedCalories").innerHTML = "";
+        document.getElementById("calculateBMR").setAttribute( "onClick", "metricCalculation()" );
+    }
+    else{
+        document.getElementById("heightImperial").innerHTML = "Feet";
+        document.getElementById("heightImperialInput").value = 0;
+        document.getElementById("heightImperialInput").min = 4;
+        document.getElementById("heightImperialInput").max = 8;
+        document.getElementById("heightMetric").innerHTML = "Inches";
+        document.getElementById("heightMetricInput").value = 0;
+        document.getElementById("heightMetricInput").min = 0;
+        document.getElementById("heightMetricInput").max = 12;
+        document.getElementById("labelWeight1").innerHTML = "Stones";
+        document.getElementById("weightMetricInput").value = 0;
+        document.getElementById("weightMetricInput").min = 0;
+        document.getElementById("weightMetricInput").max = 30;
+        document.getElementById("labelWeight2").innerHTML = "Pounds";
+        document.getElementById("weightImperialInput").Value = 0;
+        document.getElementById("weightImperialInput").min = 0;
+        document.getElementById("weightImperialInput").max = 14;
+        document.getElementById("bmrValue").innerHTML = "";
+        document.getElementById("recommendedCalories").innerHTML = "";
+        document.getElementById("calculateBMR").setAttribute( "onClick", "imperialCalculation()" );
+    }
+}
+
+function updateActivityMultiplier(){
+    activityLevel = parseFloat(document.getElementById("activityLevel").value);
+    switch(activityLevel){
+        case 1:
+            activityMultiplier = 1.375;
+            break;
+        case 2:
+            activityMultiplier = 1.55;
+            break;
+        case 3:
+            activityMultiplier = 1.725;
+            break;
+        case 4:
+            activityMultiplier = 1.9;
+            break;
+        default:
+            activityMultiplier = 1.2;
+            break;
+    }
+}
+
+function validateForm() {
+    var x = document.forms["bmrCalculator"]["age"].value;
+    if (x == 0) {
+      alert("Age must be filled out");
+      return false;
+    }
+    x = document.forms["bmrCalculator"]["heightImperialInput"].value;
+    if (x == 0) {
+      alert("Height must be filled out");
+      return false;
+    }
+    x = document.forms["bmrCalculator"]["weightMetricInput"].value;
+    if (x == 0 ) {
+        alert("Weight must be filled out");
+        return false;
+      }
+}

@@ -1,0 +1,140 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+<!--Created by: Kryselle Celine Matienzo - 301026753 - Created on May 20, 2019-->
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- #BeginEditable "doctitle" -->
+
+<title>Assignment 1 - COMP125</title>
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+<link href="Assign1.css" rel="stylesheet" type="text/css">
+<script src="Assignment1.js"></script>
+<script>
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'images/buttons/buttonB.jpg',/*url*/'images/buttons/buttonC.jpg',/*url*/'button59.gif',/*url*/'button5A.gif',/*url*/'button5C.jpg',/*url*/'button5D.jpg')">
+<div id="allPage">
+<div id="header" style="position: absolute; left: 0px; top: 0px; width: 980px; height: 140px; z-index: 1">
+<br>
+	<h1>Basal Metabolic Rate (BMR) Calculator</h1>
+	<p class="auto-style1">Your BMR is the amount of energy you expend each day when at rest. This calculator will also work out your daily calorie requirements.</p>
+	</div>
+<div id="content" style="position: absolute; left: 0px; top: 144px; width: 980px; height: 720px; z-index: 3">
+	<a href="metric.html">
+	<img id="img8" alt="Metric BMR Calculator" fp-style="fp-btn: Soft Tab 5; fp-font-color-normal: #996633; fp-font-color-press: #800080; fp-transparent: 1; fp-proportional: 0" fp-title="Metric BMR Calculator" height="55" onmousedown="FP_swapImg(1,0,/*id*/'img8',/*url*/'button5A.gif')" onmouseout="FP_swapImg(0,0,/*id*/'img8',/*url*/'button58.gif')" onmouseover="FP_swapImg(1,0,/*id*/'img8',/*url*/'button59.gif')" onmouseup="FP_swapImg(0,0,/*id*/'img8',/*url*/'button59.gif')" src="button58.gif" style="border: 0" width="160"></a><a href="imperial.html"><img id="img9" alt="Imperial BMR Calculator" fp-style="fp-btn: Soft Tab 5; fp-font-color-normal: #996633; fp-font-color-press: #800080; fp-proportional: 0" fp-title="Imperial BMR Calculator" height="55" onmousedown="FP_swapImg(1,0,/*id*/'img9',/*url*/'button5D.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img9',/*url*/'button5B.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img9',/*url*/'button5C.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img9',/*url*/'button5C.jpg')" src="button5B.jpg" style="border: 0" width="160"></a><br>
+	<h3>Metric BMR Calculator</h3>
+	<article>
+        <div class="container">
+            <form method="post">
+                <div>
+               		<div>                                       
+                 <label for="genderM">Gender: </label>
+                        <select name="genderM" id="GenderM">
+                            <option value="maleM">Male</option>
+                            <option value="femaleM">Female</option>
+                        </select>
+                    </div>
+                     <br/>
+                    <div>
+                        <label for="ageM">Age: </label>
+                        <input type="number" step="any" min="0" name="ageM" id="ageM" required="required">
+                    </div>
+                     <br/>
+                    <div>
+                        <label for="heightM">Height: </label>
+                        <input type="number" step="any" min="0" name="heightMetric" id="heightM" required="required">
+                        <span>cm</span>
+                    </div>
+                     <br/>
+                    <div>
+                        <label for="weightM">Weight: </label>
+                        <input type="number" step="any"  min="0" name="weightMetric" id="weightM" required="required">
+                        <span>kg</span>
+                        <br>
+                    </div>
+                    <br>
+                    <div>
+                    <div>
+         				<strong><label class="activity1">Select your activity level:</label></strong>
+                        <br />
+                        <br />
+                        <input type="radio" value="1.2" name="activityLevelM" class="activity">
+                        <span>I am sedentary (little or no exercise)</span><br />
+                        <input type="radio"  value="1.375" name="activityLevelM" class="activity">
+                        <span>I am lightly active (light exercise or sports 1-3 days per week)</span><br />
+                        <input type="radio" value="1.55" name="activityLevelM" class="activity">
+                        <span>I am moderately active (moderate exercise or sports 3-5 days per week)</span><br />
+                        <input type="radio" value="1.725" name="activityLevelM" class="activity">
+                        <span>I am very active (hard exercise or sports 6-7 days per week)</span><br />
+                        <input type="radio" value="1.9" name="activityLevelM" class="activity">
+                        <span>I am super active (very hard exercise or sports and a physical job or 2x training)</span>
+                    </div>
+                    </div>
+                    <br>
+                    <br />
+                    <div id="calcButtonM">
+                        <button type="button" name="button" id="calculateButtonM" onclick="CalculateMetric();">Calculate Metric BMR</button>
+                    </div>                    
+                </div>
+            </form>
+        </div>
+
+	</article>
+
+</div>
+
+<div id="footer" style="position: absolute; left: 0px; top: 864px; width: 955px; height: 70px; z-index: 4">
+	<p><a href="index.html">Back to index</a></p>
+	<p id="copyright">&copy;&nbsp;Copyright Kryselle Celine Matienzo - COMP125 - Assignment 1 - Summer 2019</p>
+</div>
+</div>
+</body>
+
+</html>

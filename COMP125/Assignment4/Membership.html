@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      JavaScript 6th Edition
+
+      Form Validation
+      Author:   Kryselle Matienzo
+      Date:     July 2, 2019
+
+      Filename: membership.html
+   -->
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="membership.css" />
+</head>
+<body>
+    <div id="container">
+        <header>
+            <h1>
+                <span>Registration Form</span>
+            </h1>
+            <h5>
+            	<span>Please complete all the fields below</span>
+            </h5>
+        </header>
+    </div>
+
+    <article>
+        <form>
+        <fieldset>
+                <label for="fname">First Name:<br /></label>
+                <input type="text" id="fname" required="required" style="width: 300px"/><br /><br />
+                
+                <label for="lname">Last Name:<br /></label>
+                <input type="text" id="lname" required="required" style="width: 300px"/><br /><br />
+                
+                <label for="address">Address:<br /></label>
+                <input type="text" id="address" required="required" style="width: 300px"/><br /><br />
+                
+                <label for="city">City:<br /></label>
+                <input type="text" id="city" required="required" style="width: 300px"/><br /><br />
+                
+                <label for="pcode">Postal Code:<br /></label>
+                <input type="text" id="pcode" required="required" style="width: 203px" placeholder="A0A A0A"/>
+                <p id="pcodeError" class="errorMsg"></p>
+                
+				<label>Province: </label>
+            	<select class="label" id="province" required="required">
+             	 	<option value="ON">ON</option>
+             		<option value="QC">QC</option>  
+              		<option value="NS">NS</option>
+              		<option value="NB">NB</option>
+              		<option value="MB">MB</option>
+              		<option value="BC">BC</option>
+              		<option value="PE">PE</option>
+              		<option value="SK">SK</option>
+              		<option value="AB">AB</option>
+              		<option value="NL">NL</option>                
+              </select>
+                <br /><br />
+                <label>Age:</label>
+				<input type="number" id="age" min="18" required="required"/><br /><br />
+				
+                <label for="pw1">Password: </label>
+                <input type="password" id="pw1" style="width: 210px" /><br /><br />
+                
+                <label for="pw2">Confirm Password: </label>
+                <input type="password" id="pw2" style="width: 210px" />
+                <p id="passwordError" class="errorMsg"></p>
+                
+                <label for="email">E-mail Address</label>
+                <input type="email" id="emailbox" style="width: 530px" placeholder="sample@email.com"/>
+                <p id="emailError" class="errorMsg"></p>
+                            <br />  
+			<input type="reset" id="button" value="Clear Form" style="width:200px">
+            <input type="button" id="button" value="Create Account" style="width:200px" onclick="setUpPages()" /> 
+                
+            </fieldset>  
+     
+            </form>
+        <br />
+        <fieldset>
+        <section id="profile">
+            <h1>Profile</h1>
+            <div id="fnameSection">
+                <h4>First Name: </h4>
+                <p id="profileFname"></p>
+            </div>
+            
+            <div id="lnameSection">
+                <h4>Last Name: </h4>
+                <p id="profileLname"></p>
+            </div>
+            
+            <div id="addressSection">
+                <h4>Address: </h4>
+                <p id="profileAddress"></p>
+            </div>
+
+            <div id="citySection">
+                <h4>City: </h4>
+                <p id="profileCity"></p>
+            </div>
+
+            <div id="postalCodeSection">
+                <h4>Postal Code: </h4>
+                <p id="profilePostalCode"></p>
+            </div>
+            
+            <div id="provinceSection">
+                <h4>Province: </h4>
+                <p id="profileProvince"></p>
+            </div>
+            
+            <div id="ageSection">
+                <h4>Age: </h4>
+                <p id="profileAge"></p>
+            </div>
+            
+            <div id="emailSection">
+                <h4>Email address: </h4>
+                <p id="profileEmail"></p>
+            </div>
+        </section>
+        </fieldset>
+    </article>
+        <div id="footer">
+        <p><a href="http://studentweb.cencol.ca/kmatienz/">Back to index</a></p>
+        <p id="copyright">&copy;&nbsp;Copyright Kryselle Celine Matienzo - COMP125 - Assignment 4 - Summer 2019</p>
+    </div>
+
+<script src="membership.js"></script>
+</body>
+
+</html>
